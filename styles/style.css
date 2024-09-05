@@ -227,6 +227,7 @@ ul{
 
 .lista-planos-itens{
     padding: 5px 10px;
+    margin: 2px;
     color: var(--branco);
     background-color: var(--vermelho);
 }
