@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="imgs/sociotorcedorSPFC.png" type="image.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="styles/cadastro.css">
+        <title>Socio Torcedor</title>
+    </head>
+    <body>
+        <header>
+            <div class="header-titulo div-header animate__animated animate__bounceInDown">
+                <h1 class="titulo">Socio Torcedor SPFC</h1>
+                <img class="escudo-header" src="imgs/São Paulo.png" alt="Escudo São Paulo">
+            </div>
+            <nav>
+                <div class="nav-links">
+                    <a class="ancoras links" href="index.html" accesskey="c">HOME</a>
+                    <p><span class="small">(alt+c)</span></p>
+                </div>
+            </nav>
+        </header>
+        <main id="main-cadastro">
+            <section class="box-form">
+                <div class="form">
+                    <h1>Cadastro para Socio Torcedor</h1>
+                    <br>
+                    <p>Complete os <span class="sublinhado">dados solicidados</span> corretamente para completar o <span class="negrito">cadastro</span></p>
+                    <br>
+                    <form>
+                        <label for="nome">Nome:</label><br>
+                        <input type="text" class="inputs" id="nome" name="nome" placeholder="Digite seu nome" accesskey="n" tabindex="1">
+
+                        <br><br>
+
+                        <label for="idade">Idade:</label><br>
+                        <input type="number" class="inputs" name="idade" id="idade" placeholder="Insira sua idade" accesskey="i" tabindex="2">
+
+                        <br><br>
+
+                        <label for="email">Email:</label><br>
+                        <input type="email" class="inputs" name="email" id="email" placeholder="Digite seu email" accesskey="g" tabindex="3">
+
+                        <br><br>
+
+                        <label for="senha">Senha:</label><br>
+                        <input type="password" class="inputs" name="senha" id="senha" placeholder="Digite sua senha" accesskey="s" tabindex="4">
+
+                        <br><br>
+                    
+                        <label for="assinatura">Selecione o seu tipo de <span class="negrito">assinatura</span>:</label> <br><br>
+                        
+                        <div>
+                            <input type="radio" class="assinatura" name="assinatura" value="Vermelho" accesskey="v" tabindex="5"> Vermelho
+                            <input type="radio" class="assinatura" name="assinatura" value="Branco" accesskey="b" tabindex="6"> Branco
+                            <input type="radio" class="assinatura" name="assinatura" value="Preto" accesskey="p" tabindex="7"> Preto
+                            <input type="radio" class="assinatura" name="assinatura" value="Tricolor" accesskey="t" tabindex="8"> Tricolor
+                            <input type="radio" class="assinatura" name="assinatura" value="Diamante" accesskey="m" tabindex="9"> Diamante
+                        </div>
+
+                        <br><br>
+
+                        <input type="button" class="botao" value="ENVIAR" name="enviar" id="enviar">
+                    </form>  
+                </div>  
+
+                <div class="comandos">
+                    <h3 class="text-destaque">Sumário</h3>
+                    <ul class="lista-comandos">
+                        <li class="lista-comandos-itens">Aperte <span class="small">alt</span> mais a primeira letra da palavra para ativar ou acessar um elemento da página.</li>
+                        <li class="lista-comandos-itens">Aperte <span class="small">alt</span> mais a letra "g" para acessar o campo do email.</li>
+                        <li class="lista-comandos-itens">Aperte <span class="small">alt</span> mais a letra "m" para ativar o elemento "diamante" do radiobox.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="footer-texto">Colégio Técnico de Limeira</p>
+            <p class="footer-texto">Gabriel e Leonardo</p>
+        </footer>
+    </body>
+</html>

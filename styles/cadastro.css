@@ -1,0 +1,80 @@
+@import url(style.css);
+@import url(planos.css);
+
+#main-cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(var(--cinza), var(--cinza-escuro));
+    margin: 0px;
+    padding: 20px;
+}
+
+.box-form{
+    background-color: var(--branco);
+    padding: 20px;
+    border: 1px solid var(--cinza);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: justify;
+}
+
+.inputs, .botao{
+    border-radius: 10px;
+    border: 0px;
+    padding: 10px;
+    background-color: var(--cinza);
+}
+
+.inputs{
+    padding: 10px 100px 10px 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+}
+
+.inputs:hover{
+    animation-duration: 7s;
+    background-color: var(--vermelho);
+}
+
+.inputs:hover::placeholder{
+    color: var(--branco);
+}
+
+.botao{
+    background-color: var(--vermelho);
+    color: var(--branco);
+    font-weight: 700;
+    width: 100%;
+}
+
+.botao:hover{
+    background-color: var(--cinza-escuro);
+    color: var(--preto);
+}
+
+.assinatura{
+    margin-left: 10px;
+    flex-wrap: wrap;
+}
+
+.assinatura:checked{
+    accent-color: var(--vermelho);
+}
+
+.comandos{
+    margin: 20px;
+}
+
+.lista-comandos-itens{
+    margin: 10px;
+}

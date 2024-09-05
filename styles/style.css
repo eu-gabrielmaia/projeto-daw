@@ -1,0 +1,300 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Rubik", sans-serif;
+}
+
+:root{
+    --vermelho: #ba181b;
+    --preto: #0b090a;
+    --branco: #FFFFFF;
+    --cinza: #e5e5e5;
+    --cinza-escuro: #adb5bd;
+}
+
+body{
+    margin: 0;
+    font-style: normal;
+    background-color: var(--branco);
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-size: 16px;
+}
+
+header{
+    background-color: var(--vermelho);
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    
+}
+
+.header-titulo{
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+h1{
+    text-align: center;
+    color: var(--vermelho);
+    font-size: 2em;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+p{
+    font-size: 1em;
+}
+
+.negrito{
+    font-weight: bold;
+}
+
+.small{
+    font-variant: small-caps;
+}
+
+.sublinhado{
+    text-decoration: underline;
+}
+
+.italico{
+    font-style: italic;
+}
+
+.italico, .sublinhado, .negrito{
+    color: var(--vermelho);
+}
+
+
+.titulo{
+    color: var(--branco);
+}
+
+nav{
+    padding: 10px;
+    background-color: var(--preto);
+    color: var(--branco);
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.nav-voltar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links{
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: 700;
+}
+
+.ancoras{
+    /*padding: 10px;
+    background-color: var(--vermelho);
+    border-radius: 10px;
+    color: var(--branco);*/
+    margin: 10px;
+    text-decoration: none;
+    transition: transform 1s;
+    
+}
+
+.ancoras:hover{
+    /*background-color: var(--preto);*/
+    color: var(--cinza-escuro);
+    transform: translateX(0) scale(1.1);
+}
+
+.ancoras-texto{
+    text-decoration: none;
+    color: var(--vermelho);
+    font-weight: 700;
+}
+
+.ancoras-texto:hover{
+    transform: translateX(0) scale(1.1);
+}
+
+
+main{
+    margin: 10px;
+    background-color: var(--branco);
+}
+
+.div-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.div-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-destaque{
+    text-align: center;
+    margin: 10px;
+}
+
+img{
+    width: 200px;
+}
+
+img:hover{
+    transition-duration: 1s;
+    transform: translateX(0) scale(0.9);
+    filter: grayscale(100%);
+}
+
+.escudo-header{
+    width: 50px;
+}
+
+.conteudo{
+    display: flex;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.div-conteudo{
+    display: flex;
+    justify-content: center;
+}
+
+.div-text-titulo{
+    text-align: left;
+}
+
+.div-text{
+    text-align: justify;
+    /*width: 50%*/
+    border: 1px var(--cinza) solid;
+    padding: 10px 20px;
+}
+
+
+.box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.div-planos{
+    text-align: center;
+    border: 1px solid var(--cinza-escuro);
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 50%;
+}
+
+#planos{
+    margin: 10px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.lista-planos{
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.lista-planos-itens{
+    padding: 5px 10px;
+    color: var(--branco);
+    background-color: var(--vermelho);
+}
+
+
+table{
+    border-collapse: collapse;
+    border: 1px solid var(--cinza-escuro);
+}
+
+th{
+    background-color: var(--cinza);
+    font-size: 1.2em;
+}
+
+th,td{
+    padding: 2px;
+}
+
+.div-precos{
+    margin: 10px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 15px;
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.footer-texto{
+    text-align: center;
+    margin: 5px;
+}
+
+@media (max-width: 320px){
+    .div-precos{
+        display: none;
+    }
+}
+
+/*Celulares*/
+@media (max-width: 480px) {
+
+    .conteudo{
+        display: none;
+    }
+
+    .div-planos{
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 750px) {
+
+    .conteudo{
+        display: none;
+    }
+
+    .div-planos{
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+}

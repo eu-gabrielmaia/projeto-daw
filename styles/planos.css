@@ -1,0 +1,91 @@
+@import url(style.css);
+@import url(cadastro.css);
+
+.titulo-planos{
+    margin-bottom: 10px;
+    color: var(--preto);
+}
+
+.todos-planos{
+    margin: 10px;
+}
+
+.descricao-plano{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid var(--preto);
+    border-radius: 5px;
+}
+
+.descricao-plano:hover{
+    background-color: var(--cinza-escuro);
+}
+
+.vantagem-plano{
+    margin-bottom: 15px;
+}
+
+.vantagem-plano::before{
+    content: ' - ';
+    font-weight: 700;
+    /*padding: 3px 8px;
+    border-radius: 2px;
+    
+    background-color: var(--cinza-escuro);
+    color: var(--branco);*/
+}
+
+/*.plano-vermelho, .plano-branco, .plano-preto, .plano-tricolor, .plano-diamante*/
+
+.titulos-planos{
+    font-size: 1.75em;
+    text-align: left;
+}
+
+#titulo-vermelho{
+    color: var(--vermelho);
+}
+
+#titulo-branco{
+    color: var(--branco);
+    -webkit-text-stroke: 1.25px var(--preto);
+}
+
+#titulo-tricolor{
+    color: var(--branco);
+    text-shadow: 2px 1px 3px var(--vermelho);
+    -webkit-text-stroke: 1.25px var(--preto);
+}
+
+#titulo-diamante{
+    color: #8ecae6;
+    -webkit-text-stroke: 1px #219ebc;
+}
+
+.ancoras-planos{
+    padding: 5px 10px;
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.ancoras-planos:hover{
+    color: var(--branco);
+    background-color: var(--vermelho);
+}
+
+.conteudo-plano{
+    display: flex;
+    justify-content: center;
+}
+
+.destaque-planos{
+    margin: 15px auto;
+}
+
+@media (max-width: 480px) {
+
+    .conteudo-plano{
+        display: none;
+    }
+
+}
