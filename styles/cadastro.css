@@ -44,6 +44,7 @@ input[type=number] {
 .inputs:hover{
     animation-duration: 7s;
     background-color: var(--vermelho);
+    color: var(--branco);
 }
 
 .inputs:hover::placeholder{
@@ -61,6 +62,7 @@ input[type=number] {
     background-color: var(--cinza-escuro);
     color: var(--preto);
 }
+
 
 .assinatura{
     margin-left: 10px;

@@ -26,7 +26,8 @@
 }
 
 .vantagem-plano::before{
-    content: ' - ';
+    list-style: circle;
+
     font-weight: 700;
     /*padding: 3px 8px;
     border-radius: 2px;
