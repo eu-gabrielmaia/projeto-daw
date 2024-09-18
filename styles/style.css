@@ -167,6 +167,11 @@ img:hover{
     width: 50px;
 }
 
+.imagem-principal{
+    width: 300px;
+    height: 300px;
+}
+
 .conteudo{
     display: flex;
     align-self: stretch;
@@ -283,11 +288,14 @@ th,td{
     }
 }
 
-
-
-
 @media (max-width: 320px){
     .div-precos{
+        display: none;
+    }
+}
+
+@media print {
+    header{
         display: none;
     }
 }

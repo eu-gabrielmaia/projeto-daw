@@ -22,12 +22,12 @@
 }
 
 .vantagem-plano{
-    margin-bottom: 15px;
+    margin: 0px 0px 15px 20px;
+    list-style: circle;
 }
 
 .vantagem-plano::before{
-    list-style: circle;
-
+    
     font-weight: 700;
     /*padding: 3px 8px;
     border-radius: 2px;
