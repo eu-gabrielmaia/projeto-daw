@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" href="styles/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <title>Socio Torcedor</title>
     </head>
     <body id="topo">
@@ -35,24 +36,101 @@
             </section>
             
             <section>
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            Introdução ao São Paulo Futebol Clube
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <p class="div-text-p">Bem-vindo ao <span class="negrito">São Paulo Futebol Clube</span>, uma das instituições esportivas mais gloriosas e tradicionais do Brasil. Fundado em <span class="italico">25 de janeiro de 1930</span>, o São Paulo FC é muito mais do que um clube de futebol; é um símbolo de paixão, conquistas e tradição. Situado na vibrante cidade de São Paulo, o clube se destaca não apenas pela excelência em campo, mas também pelo seu compromisso com seus torcedores e pela promoção de uma ampla gama de modalidades esportivas.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            História e Tradição
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p class="div-text-p">A trajetória do <span class="negrito">São Paulo FC</span> é marcada por momentos históricos e conquistas inesquecíveis. Apesar de ter interrompido suas atividades em maio de 1935, o clube retomou suas operações em dezembro do mesmo ano, começando um capítulo de sucesso que continua até os dias de hoje. O São Paulo é um dos clubes mais vencedores do Brasil, com uma galeria de troféus que inclui múltiplos títulos do  <span class="sublinhado">Campeonato Brasileiro, da Copa Libertadores da América e do Mundial de Clubes da FIFA</span>. Essas conquistas refletem a dedicação e o talento de gerações de jogadores, técnicos e dirigentes que vestiram as cores tricolores com orgulho.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Conquistas Memoráveis
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p class="div-text-p">O São Paulo FC é sinônimo de títulos e glórias. Entre as conquistas mais memoráveis, destacam-se os <span class="italico">três títulos da Copa Libertadores da América (1992, 1993 e 2005)</span> e os <span class="italico">três títulos do Mundial de Clubes da FIFA (1992, 1993 e 2005)</span>. No cenário nacional, o clube também se sobressai com <span class="italico">seis conquistas do Campeonato Brasileiro (1977, 1986, 1991, 2006, 2007 e 2008)</span>, além de inúmeros campeonatos paulistas e outras competições nacionais e internacionais. Essas vitórias consolidam o São Paulo FC como uma potência do futebol mundial, respeitada e admirada por torcedores e adversários.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                 <div class="conteudo">
                     <div class="div-conteudo">
                         <div class="div-text">
-                            <h2 class="div-text-titulos">Introdução ao São Paulo Futebol Clube</h2>
-                            <p class="div-text-p">Bem-vindo ao <span class="negrito">São Paulo Futebol Clube</span>, uma das instituições esportivas mais gloriosas e tradicionais do Brasil. Fundado em <span class="italico">25 de janeiro de 1930</span>, o São Paulo FC é muito mais do que um clube de futebol; é um símbolo de paixão, conquistas e tradição. Situado na vibrante cidade de São Paulo, o clube se destaca não apenas pela excelência em campo, mas também pelo seu compromisso com seus torcedores e pela promoção de uma ampla gama de modalidades esportivas.</p>
+                            <h2 class=""></h2>
+
                         </div>
                         <div class="div-text">
-                            <h2 class="div-text-titulos">História e Tradição</h2>
-                            <p class="div-text-p">A trajetória do <span class="negrito">São Paulo FC</span> é marcada por momentos históricos e conquistas inesquecíveis. Apesar de ter interrompido suas atividades em maio de 1935, o clube retomou suas operações em dezembro do mesmo ano, começando um capítulo de sucesso que continua até os dias de hoje. O São Paulo é um dos clubes mais vencedores do Brasil, com uma galeria de troféus que inclui múltiplos títulos do  <span class="sublinhado">Campeonato Brasileiro, da Copa Libertadores da América e do Mundial de Clubes da FIFA</span>. Essas conquistas refletem a dedicação e o talento de gerações de jogadores, técnicos e dirigentes que vestiram as cores tricolores com orgulho.</p>
+                            <h2 class="div-text-titulos"></h2>
+                            
                         </div> 
                         <div class="div-text">
-                            <h2 class="div-text-titulos">Conquistas Memoráveis</h2>
-                            <p class="div-text-p">O São Paulo FC é sinônimo de títulos e glórias. Entre as conquistas mais memoráveis, destacam-se os <span class="italico">três títulos da Copa Libertadores da América (1992, 1993 e 2005)</span> e os <span class="italico">três títulos do Mundial de Clubes da FIFA (1992, 1993 e 2005)</span>. No cenário nacional, o clube também se sobressai com <span class="italico">seis conquistas do Campeonato Brasileiro (1977, 1986, 1991, 2006, 2007 e 2008)</span>, além de inúmeros campeonatos paulistas e outras competições nacionais e internacionais. Essas vitórias consolidam o São Paulo FC como uma potência do futebol mundial, respeitada e admirada por torcedores e adversários.</p>
+                            <h2 class="div-text-titulos"></h2>
+                            
                         </div>
                     </div>
                     <div class="div-conteudo">
                         <div class="div-text">
-                            <h2 class="div-text-titulos">Compromisso com o Sócio-Torcedor</h2>
+                            <h2 class="div-text-titulos"></h2>
                             <p class="div-text-p">O <span class="negrito">São Paulo FC</span> valoriza profundamente o apoio de seus torcedores. Por isso, oferece o programa Sócio-Torcedor, que visa aproximar ainda mais o clube de seus fãs. Ser um <span class="italico">Sócio-Torcedor do São Paulo FC</span> é uma maneira de contribuir diretamente para o fortalecimento do clube, além de desfrutar de uma série de benefícios exclusivos. Entre as vantagens estão descontos em ingressos, prioridade na compra de entradas para jogos, acesso a eventos exclusivos, descontos em produtos oficiais e muito mais. O programa é uma oportunidade única para os torcedores fazerem parte ativa da história do clube e vivenciarem de perto a emoção do futebol.</p>
                         </div>
                         <div class="div-text">
@@ -126,5 +204,6 @@
             <p class="footer-texto">Colégio Técnico de Limeira</p>
             <p class="footer-texto">Gabriel e Leonardo</p>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>
