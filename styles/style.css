@@ -269,11 +269,7 @@ th,td{
 
 /*Celulares*/
 
-@media (max-width: 1000px) {
-    #main-cadastro{
-        height: 100vh;
-    }
-}
+
 
 @media (max-width: 750px) {
 
