@@ -21,7 +21,12 @@
     text-align: justify;
 }
 
-.inputs, .botao{
+.descricao-form{
+    text-align: center;
+    font-weight: 600;
+}
+
+.input, .botao{
     border-radius: 10px;
     border: 0px;
     padding: 10px;
@@ -51,6 +56,10 @@ input[type=number] {
     color: var(--branco);
 }
 
+.form-check{
+    margin-left: 10px;
+}
+
 .botao{
     background-color: var(--vermelho);
     color: var(--branco);
@@ -73,11 +82,18 @@ input[type=number] {
     accent-color: var(--vermelho);
 }
 
+.lista-comandos{
+    padding: 0;
+    margin: 0;
+}
+
 .comandos{
+    
     margin: 20px;
 }
 
 .lista-comandos-itens{
+    
     margin: 10px;
 }
 

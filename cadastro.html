@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" href="styles/cadastro.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <title>Socio Torcedor</title>
     </head>
     <body>
@@ -18,55 +19,105 @@
                 <h1 class="titulo">Socio Torcedor SPFC</h1>
                 <img class="escudo-header" src="imgs/São Paulo.png" alt="Escudo São Paulo">
             </div>
-            <nav>
-                <div class="nav-links">
-                    <a class="ancoras links" href="index.html" accesskey="c">HOME</a>
-                    <p><span class="small">(alt+c)</span></p>
+            <nav class="nav navbar navbar-expand-lg sticky-top text-light">
+                <div class="container-fluid">
+                    <i class="bi bi-info-circle-fill"></i>
+                  <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-light" href="">Cadastro</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-light" href="planos.html">Planos</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-            </nav>
+              </nav>
         </header>
         <main id="main-cadastro">
-            <section class="box-form">
-                <div class="form">
+            <section class=" box-form">
+                <div class="container form">
                     <h1>Cadastro para Socio Torcedor</h1>
                     <br>
-                    <p>Complete os <span class="sublinhado">dados solicidados</span> corretamente para completar o <span class="negrito">cadastro</span></p>
+                    <p class="descricao-form">Complete os <span class="sublinhado">dados solicidados</span> corretamente para completar o <span class="negrito">cadastro</span></p>
                     <br>
-                    <form>
-                        <label for="nome">Nome:</label><br>
-                        <input type="text" class="inputs" id="nome" name="nome" placeholder="Digite seu nome" accesskey="n" tabindex="1">
-
-                        <br><br>
-
-                        <label for="idade">Idade:</label><br>
-                        <input type="number" class="inputs" name="idade" id="idade" placeholder="Insira sua idade" accesskey="i" tabindex="2">
-
-                        <br><br>
-
-                        <label for="email">Email:</label><br>
-                        <input type="email" class="inputs" name="email" id="email" placeholder="Digite seu email" accesskey="g" tabindex="3">
-
-                        <br><br>
-
-                        <label for="senha">Senha:</label><br>
-                        <input type="password" class="inputs" name="senha" id="senha" placeholder="Digite sua senha" accesskey="s" tabindex="4">
-
-                        <br><br>
-                    
-                        <label for="assinatura">Selecione o seu tipo de <span class="negrito">assinatura</span>:</label> <br><br>
-                        
-                        <div>
-                            <input type="radio" class="assinatura" name="assinatura" value="Vermelho" accesskey="v" tabindex="5"> Vermelho
-                            <input type="radio" class="assinatura" name="assinatura" value="Branco" accesskey="b" tabindex="6"> Branco
-                            <input type="radio" class="assinatura" name="assinatura" value="Preto" accesskey="p" tabindex="7"> Preto
-                            <input type="radio" class="assinatura" name="assinatura" value="Tricolor" accesskey="t" tabindex="8"> Tricolor
-                            <input type="radio" class="assinatura" name="assinatura" value="Diamante" accesskey="m" tabindex="9"> Diamante
+                    <form class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-4">
+                          <label for="validationCustom01" class="form-label">Nome Completo</label>
+                          <input type="text" class="form-control inputs" id="validationCustom01" value="" placeholder="Digite seu nome" required>
+                          <div class="invalid-feedback">Insira um nome válido</div>
                         </div>
+                        <label>Selecione o seu tipo de <span class="negrito">assinatura</span>:</label> <br><br>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="validationFormCheck1" name="radio-stacked" required>
+                            <label class="form-check-label" for="validationFormCheck1">Vermelho</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+                            <label class="form-check-label" for="validationFormCheck2">Branco</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+                            <label class="form-check-label" for="validationFormCheck3">Preto</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="radio" class="form-check-input" id="validationFormCheck4" name="radio-stacked" required>
+                            <label class="form-check-label" for="validationFormCheck4">Tricolor</label>
+                          </div>
+                          <div class="form-check mb-3">
+                            <input type="radio" class="form-check-input" id="validationFormCheck5" name="radio-stacked" required>
+                            <label class="form-check-label" for="validationFormCheck5">Diamante</label>
+                            <div class="invalid-feedback">Selecione pelo menos uma opção</div>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control inputs" id="validationEmail" placeholder="Digite seu email" required>
+                            <div class="invalid-feedback">Insira um email válido</div>
+                          </div>
+                        <div class="col-md-3">
+                          <label for="validationCustom04" class="form-label">Estado Civil</label>
+                          <select class="form-select" id="validationCustom04" required>
+                            <option selected value="Solteiro">Solteiro</option>
+                            <option>Casado</option>
+                            <option>Separado</option>
+                            <option>Divorciado</option>
+                            <option>Viúvo</option>
+                          </select>
+                          <div class="invalid-feedback">
+                            Escolha um estado civil.
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                        </div>
+                        <div class="">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Senha</label>
+                            <div class="col-sm-10">
+                              <input type="password" class="form-control inputs" id="inputPassword3" placeholder="Digite sua senha" required>
 
-                        <br><br>
-
-                        <input type="button" class="botao" value="ENVIAR" name="enviar" id="enviar">
-                    </form>  
+                            </div>
+                          </div>
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                              Aceitar termos de privacidade e continuar
+                            </label>
+                            <div class="invalid-feedback">
+                              Para continuar você precisar concordar com nossos termos de privacidade!
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button class="btn btn-danger botao" type="submit">Enviar</button>
+                        </div>
+                      </form>
                 </div>  
 
                 <div class="comandos">
@@ -84,5 +135,6 @@
             <p class="footer-texto">Gabriel e Leonardo</p>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
     </body>
 </html>

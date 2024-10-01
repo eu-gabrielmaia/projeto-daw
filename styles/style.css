@@ -10,6 +10,7 @@
     --branco: #FFFFFF;
     --cinza: #e5e5e5;
     --cinza-escuro: #adb5bd;
+    --bs-body-font-family: "Rubik", sans-serif;
 }
 
 body{
@@ -19,13 +20,12 @@ body{
     flex-direction: column;
     align-self: stretch;
     font-size: 16px;
+    font-family: var(--bs-body-font-family) !important;
 }
 
 header{
     background-color: var(--vermelho);
-    position: sticky;
-    top: 0px;
-    z-index: 1;
+    color: var(--cinza) !important;
 }
 
 .header-titulo{
@@ -33,53 +33,16 @@ header{
     font-size: 1.2em;
 }
 
-h1{
-    text-align: center;
-    color: var(--vermelho);
-    font-size: 2em;
-}
-
-h2{
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 1.5em;
-}
-
-p{
-    font-size: 1em;
-}
-
-.negrito{
-    font-weight: bold;
-}
-
-.small{
-    font-variant: small-caps;
-}
-
-.sublinhado{
-    text-decoration: underline;
-}
-
-.italico{
-    font-style: italic;
-}
-
-.italico, .sublinhado, .negrito{
-    color: var(--vermelho);
-}
-
-
-.titulo{
-    color: var(--branco);
-}
-
 nav{
     padding: 10px;
     background-color: var(--preto);
-    color: var(--branco);
+    color: white;
     align-items: center;
     gap: 10px;
+}
+
+.nav-item{
+    margin: 0 15px;
 }
 
 .nav-links{
@@ -134,11 +97,60 @@ main{
     
 }
 
+
+h1{
+    text-align: center;
+    color: var(--vermelho);
+    font-size: 2em;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+p{
+    font-size: 1em;
+}
+
+.negrito{
+    font-weight: bold;
+}
+
+.small{
+    font-variant: small-caps;
+}
+
+.sublinhado{
+    text-decoration: underline;
+}
+
+.italico{
+    font-style: italic;
+}
+
+.italico, .sublinhado, .negrito{
+    color: var(--vermelho);
+}
+
+
+.titulo{
+    color: var(--branco);
+}
+
 .div-header{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
+}
+
+.secao-aprensentacao{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .div-img{
@@ -153,11 +165,11 @@ main{
     margin: 10px;
 }
 
-img{
+.imagem-principal{
     width: 200px;
 }
 
-img:hover{
+.imagem-principal:hover{
     transition-duration: 1s;
     transform: translateX(0) scale(0.9);
     filter: grayscale(100%);
@@ -172,10 +184,23 @@ img:hover{
     height: 300px;
 }
 
+.descricao-jogador{
+    margin: 10px 0;
+    padding: 10px;
+    background: var(--cinza);
+    border-radius: 10px;
+}
+
 .conteudo{
     display: flex;
     align-self: stretch;
     flex-wrap: wrap;
+}
+
+.conteudo-destaque{
+    margin: 50px 0;
+    padding: 25px 0;
+    background: var(--cinza);
 }
 
 .div-conteudo{
@@ -194,6 +219,14 @@ img:hover{
     padding: 10px 20px;
 }
 
+
+.galeria-tricolor{
+    margin: 50px 0;
+}
+
+.carousel-item img{
+    height: 850px;
+}
 
 .box{
     display: flex;
@@ -217,6 +250,8 @@ img:hover{
 ul{
     list-style-type: none;
 }
+
+
 
 .lista-planos{
     margin: 10px;
@@ -247,6 +282,10 @@ th,td{
     padding: 2px;
 }
 
+.secao-planos{
+    margin: 50px 0;
+}
+
 .div-precos{
     margin: 10px;
 }
@@ -269,9 +308,15 @@ th,td{
 
 /*Celulares*/
 
-
+@media(max-width:991px){
+    .nav-item{
+        margin: 15px 0;
+    }
+}
 
 @media (max-width: 750px) {
+
+    
 
     .conteudo{
         display: none;
