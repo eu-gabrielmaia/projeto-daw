@@ -8,6 +8,7 @@
 
 .todos-planos{
     margin: 10px;
+    column-count: 1;
 }
 
 .descricao-plano{
@@ -15,6 +16,7 @@
     padding: 10px;
     border: 1px solid var(--preto);
     border-radius: 5px;
+    min-height: 500px;
 }
 
 .descricao-plano:hover{
@@ -27,16 +29,8 @@
 }
 
 .vantagem-plano::before{
-    
     font-weight: 700;
-    /*padding: 3px 8px;
-    border-radius: 2px;
-    
-    background-color: var(--cinza-escuro);
-    color: var(--branco);*/
 }
-
-/*.plano-vermelho, .plano-branco, .plano-preto, .plano-tricolor, .plano-diamante*/
 
 .titulos-planos{
     font-size: 1.75em;
@@ -81,6 +75,12 @@
 
 .destaque-planos{
     margin: 15px auto;
+}
+
+.planos-precos{
+    font-size: 0.5em;
+    color: var(--preto);
+    -webkit-text-stroke: 0px;
 }
 
 @media (max-width: 480px) {
