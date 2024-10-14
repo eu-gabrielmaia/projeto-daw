@@ -13,14 +13,11 @@
 
 .descricao-plano{
     margin: 10px;
-    padding: 10px;
-    border: 1px solid var(--preto);
-    border-radius: 5px;
     min-height: 500px;
 }
 
 .descricao-plano:hover{
-    background-color: var(--cinza-escuro);
+    background-color: var(--cinza);
 }
 
 .vantagem-plano{
