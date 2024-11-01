@@ -106,9 +106,8 @@ nav{
 
 
 main{
-    margin: 10px;
+    margin: 20px;
     background-color: var(--branco);
-    
 }
 
 
@@ -239,7 +238,7 @@ p{
 
 
 .galeria-tricolor{
-    margin: 50px 0;
+    margin: 50px 20px;
 }
 
 .carousel-item img{
