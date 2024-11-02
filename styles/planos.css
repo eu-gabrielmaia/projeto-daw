@@ -8,11 +8,10 @@
 
 .todos-planos{
     margin: 10px;
-    column-count: 1;
 }
 
 .descricao-plano{
-    margin: 10px;
+    min-width: 350px;
     min-height: 500px;
 }
 
@@ -54,24 +53,27 @@
     -webkit-text-stroke: 1px #219ebc;
 }
 
+.conteudo-plano{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.destaque-planos{
+    margin: 15px auto;
+}
+
 .ancoras-planos{
     padding: 5px 10px;
     background-color: var(--preto);
     color: var(--branco);
+    border-radius: 10px;
 }
 
 .ancoras-planos:hover{
     color: var(--branco);
     background-color: var(--vermelho);
-}
-
-.conteudo-plano{
-    display: flex;
-    justify-content: center;
-}
-
-.destaque-planos{
-    margin: 15px auto;
+    box-shadow: 0px 0px 15px var(--vermelho);
 }
 
 .planos-precos{
@@ -84,6 +86,14 @@
 
     .conteudo-plano{
         display: none;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .todos-planos{
+        flex-direction: column;
     }
 
 }
